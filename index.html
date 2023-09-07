@@ -5,8 +5,126 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <div class="container">
+      <header class="header">
+        <nav class="navigation">
+          <a class="logo" href="index.html">
+            <img src="#" width="137" height="56" alt="Логотип интернет-магазина. Надпись курсивом на английском языке: Глейси Шоп.">
+          </a>
+          <ul class="nav-list list-reset">
+            <li class="nav-item nav-item-catalog">
+              <a class="nav-link nav-link-catalog" href="#">Каталог
+                <span></span>
+              </a>
+              <!-- Попап - каталог -->
+              <div class="nav-catalog-container">
+                <ul class="nav-dropdown list-reset">
+                  <li class="nav-dropdown-item">
+                    <a class="nav-dropdown-link" href="#">Новинки</a>
+                  </li>
+                  <li class="nav-dropdown-item">
+                    <a class="nav-dropdown-link" href="catalog.html">Сливочное</a>
+                  </li>
+                  <li class="nav-dropdown-item">
+                    <a class="nav-dropdown-link" href="#">Щербеты</a>
+                  </li>
+                  <li class="nav-dropdown-item">
+                    <a class="nav-dropdown-link" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="nav-dropdown-item">
+                    <a class="nav-dropdown-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">О компании</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+            </li>
+          </ul>
+          <ul class="user-menu list-reset">
+            <li class="user-menu-item user-menu-item-search">
+              <button class="button user-menu-button user-menu-button-search" type="button">
+                <span class="visually-hidden">Открыть поиск по сайту.</span>
+              </button>
+              <!-- Попап - поиск  -->
+              <div class="user-menu-search-container">
+                <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+                  <label class="search-label" for="header-search-field">
+                    <span class="visually-hidden">Поиск по сайту.</span>
+                    <input class="search-field input-field" type="search" name="search-field" id="header-search-field" placeholder="Поиск по сайту">
+                  </label>
+                </form>
+              </div>
+            </li>
+            <li class="user-menu-item user-menu-item-login">
+              <button class="button user-menu-button user-menu-button-login" type="button">Вход</button>
+              <!-- Попап - вход  -->
+              <div class="user-menu-login-container">
+                <form class="login-form" action="https://echo.htmlacademy.ru/" method="get">
+                  <h2 class="login-form-title title title-small">Личный кабинет</h2>
+                  <fieldset class="login-form-fieldset">
+                    <label class="visually-hidden" for="login-email-field">Введите логин.</label>
+                    <input class="login-field input-field" type="email" name="login-email-field" id="login-email-field" placeholder="Ваш e-mail" required>
+                    <label class="visually-hidden" for="login-password-field">Введите пароль.</label>
+                    <input class="login-field input-field" type="password" name="login-password-field" id="login-password-field" required>
+                  </fieldset>
+                  <button class="button login-form-button" type="submit">Войти</button>
+                  <div class="login-form-link-wrapper">
+                    <a class="login-form-link" href="#">Забыли пароль?</a>
+                    <a class="login-form-link" href="#">Регистрация</a>
+                  </div>
+                </form>
+              </div>
+            </li>
+            <li class="user-menu-item user-menu-item-cart">
+              <button class="button user-menu-button user-menu-button-cart" type="button">2 товара <span class="visually-hidden">в корзине.</span></button>
+              <!-- Попап - вход  -->
+              <div class="user-menu-cart-container">
+                <h2 class="cart-title title title-small">Корзина.</h2>
+                <ul class="cart-list list-reset">
+                  <li class="cart-item">
+                    <a class="cart-item-link" href="#">
+                      <div class="cart-item-img">
+                        <img src="#" width="46" height="46" alt="Крупным планом: шарик малинового пломбира неоднородного розового цвета.">
+                      </div>
+                      <p class="cart-item-title">Малинка</p>
+                      <p class="cart-item-desc">1 кг х 310 ₽</p>
+                    </a>
+                    <span class="cart-item-price">310 ₽</span>
+                    <button class="cart-item-button" type="button">
+                      <span class="visually-hidden">Удалить из корзины.</span>
+                    </button>
+                  </li>
+                  <li class="cart-item">
+                    <a class="cart-item-link" href="#">
+                      <div class="cart-item-img">
+                        <img src="#" width="46" height="46" alt="Крупным планом: шарик пломбира голубого цвета с разноцветной посыпкой.">
+                      </div>
+                      <p class="cart-item-title">Бабл-гам</p>
+                      <p class="cart-item-desc">1,5 кг х 320 ₽</p>
+                    </a>
+                    <span class="cart-item-price">480 ₽</span>
+                    <button class="cart-item-button" type="button">
+                      <span class="visually-hidden">Удалить из корзины.</span>
+                    </button>
+                  </li>
+                </ul>
+                <a class="button cart-button" href="#">Оформить заказ</a>
+                <dl class="cart-total">
+                  <dt>Итого:</dt>
+                  <dd>790 ₽</dd>
+                </dl>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
   </body>
 </html>
