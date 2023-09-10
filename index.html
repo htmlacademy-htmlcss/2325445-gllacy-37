@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
   </head>
+
   <body>
     <div class="container">
       <header class="header">
         <nav class="navigation">
-          <a class="logo" href="index.html">
+          <a class="logo nav-logo" href="index.html" aria-current="page">
             <img src="#" width="137" height="56" alt="Логотип интернет-магазина. Надпись курсивом на английском языке: Глейси Шоп.">
           </a>
+
           <ul class="nav-list list-reset">
-            <li class="nav-item nav-item-catalog">
-              <a class="nav-link nav-link-catalog" href="#">Каталог
-                <span></span>
-              </a>
+            <li class="nav-item nav-item-catalog popup">
+              <a class="nav-link nav-link-catalog" href="#">Каталог</a>
               <!-- Попап - каталог -->
               <div class="nav-catalog-container">
                 <ul class="nav-dropdown list-reset">
@@ -43,38 +43,42 @@
             <li class="nav-item">
               <a class="nav-link" href="#">О компании</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-            </li>
           </ul>
+
+          <a class="nav-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+
           <ul class="user-menu list-reset">
             <li class="user-menu-item user-menu-item-search">
-              <button class="button user-menu-button user-menu-button-search" type="button">
+              <a class="user-menu-link user-menu-link-search" href="#">
                 <span class="visually-hidden">Открыть поиск по сайту.</span>
-              </button>
+              </a>
               <!-- Попап - поиск  -->
               <div class="user-menu-search-container">
                 <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-                  <label class="search-label" for="header-search-field">
-                    <span class="visually-hidden">Поиск по сайту.</span>
-                    <input class="search-field input-field" type="search" name="search-field" id="header-search-field" placeholder="Поиск по сайту">
-                  </label>
+                  <label class="visually-hidden" for="header-search-field">Форма поиска.</label>
+                  <input class="search-field input-field" type="search" name="search-field" id="header-search-field" placeholder="Поиск по сайту">
+                  <button class="visually-hidden" type="submit">Искать.</button>
                 </form>
               </div>
             </li>
+
             <li class="user-menu-item user-menu-item-login">
-              <button class="button user-menu-button user-menu-button-login" type="button">Вход</button>
+              <a class="user-menu-link user-menu-link-login" href="#">
+                <span>Вход</span>
+              </a>
               <!-- Попап - вход  -->
               <div class="user-menu-login-container">
+                <h2 class="login-form-title title title-small">Личный кабинет</h2>
                 <form class="login-form" action="https://echo.htmlacademy.ru/" method="get">
-                  <h2 class="login-form-title title title-small">Личный кабинет</h2>
                   <fieldset class="login-form-fieldset">
                     <label class="visually-hidden" for="login-email-field">Введите логин.</label>
                     <input class="login-field input-field" type="email" name="login-email-field" id="login-email-field" placeholder="Ваш e-mail" required>
                     <label class="visually-hidden" for="login-password-field">Введите пароль.</label>
                     <input class="login-field input-field" type="password" name="login-password-field" id="login-password-field" required>
                   </fieldset>
+
                   <button class="button login-form-button" type="submit">Войти</button>
+
                   <div class="login-form-link-wrapper">
                     <a class="login-form-link" href="#">Забыли пароль?</a>
                     <a class="login-form-link" href="#">Регистрация</a>
@@ -82,44 +86,54 @@
                 </form>
               </div>
             </li>
+
             <li class="user-menu-item user-menu-item-cart">
-              <button class="button user-menu-button user-menu-button-cart" type="button">2 товара <span class="visually-hidden">в корзине.</span></button>
+              <a class="user-menu-link user-menu-link-search" href="#">
+                2 товара <span class="visually-hidden">в корзине.</span>
+              </a>
               <!-- Попап - вход  -->
               <div class="user-menu-cart-container">
-                <h2 class="cart-title title title-small">Корзина.</h2>
-                <ul class="cart-list list-reset">
-                  <li class="cart-item">
-                    <a class="cart-item-link" href="#">
-                      <div class="cart-item-img">
-                        <img src="#" width="46" height="46" alt="Крупным планом: шарик малинового пломбира неоднородного розового цвета.">
-                      </div>
-                      <p class="cart-item-title">Малинка</p>
-                      <p class="cart-item-desc">1 кг х 310 ₽</p>
-                    </a>
-                    <span class="cart-item-price">310 ₽</span>
-                    <button class="cart-item-button" type="button">
-                      <span class="visually-hidden">Удалить из корзины.</span>
-                    </button>
-                  </li>
-                  <li class="cart-item">
-                    <a class="cart-item-link" href="#">
-                      <div class="cart-item-img">
-                        <img src="#" width="46" height="46" alt="Крупным планом: шарик пломбира голубого цвета с разноцветной посыпкой.">
-                      </div>
-                      <p class="cart-item-title">Бабл-гам</p>
-                      <p class="cart-item-desc">1,5 кг х 320 ₽</p>
-                    </a>
-                    <span class="cart-item-price">480 ₽</span>
-                    <button class="cart-item-button" type="button">
-                      <span class="visually-hidden">Удалить из корзины.</span>
-                    </button>
-                  </li>
-                </ul>
-                <a class="button cart-button" href="#">Оформить заказ</a>
-                <dl class="cart-total">
-                  <dt>Итого:</dt>
-                  <dd>790 ₽</dd>
-                </dl>
+                <div class="cart-content cart-content-empty">
+                  <h2 class="cart-title title title-small">Ваша корзина пока пуста</h2>
+                </div>
+
+                <div class="cart-content cart-content-full">
+                  <h2 class="cart-title title title-small">Корзина</h2>
+
+                  <ul class="cart-list list-reset">
+                    <li class="cart-item">
+                      <a class="cart-item-link" href="#">
+                        <div class="cart-item-img">
+                          <img src="#" width="46" height="46" alt="Крупным планом: шарик малинового пломбира неоднородного розового цвета.">
+                        </div>
+                        <p class="cart-item-title">Малинка</p>
+                        <p class="cart-item-desc">1&nbsp;кг&nbsp;х&nbsp;310&nbsp;₽</p>
+                      </a>
+                      <span class="cart-item-price">310&nbsp;₽</span>
+                      <button class="cart-item-button" type="button">
+                        <span class="visually-hidden">Удалить из корзины.</span>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <a class="cart-item-link" href="#">
+                        <div class="cart-item-img">
+                          <img src="#" width="46" height="46" alt="Крупным планом: шарик пломбира голубого цвета с разноцветной посыпкой.">
+                        </div>
+                        <p class="cart-item-title">Бабл-гам</p>
+                        <p class="cart-item-desc">1,5&nbsp;кг&nbsp;х&nbsp;320&nbsp;₽</p>
+                      </a>
+                      <span class="cart-item-price">480&nbsp;₽</span>
+                      <button class="cart-item-button" type="button">
+                        <span class="visually-hidden">Удалить из корзины.</span>
+                      </button>
+                    </li>
+                  </ul>
+
+                  <div class="cart-checkout">
+                    <a class="button cart-button" href="#">Оформить заказ</a>
+                    <span class="cart-total">Итого:&nbsp;790&nbsp;₽</span>
+                  </div>
+                </div>
               </div>
             </li>
           </ul>
