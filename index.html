@@ -343,6 +343,46 @@
             </form>
           </section>
         </div>
+
+        <section class="delivery">
+          <h2 class="delivery-title title">Доставка любимого мороженого на дом</h2>
+          <p class="delivery-desc desc">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+
+          <div class="delivery-form-wrapper">
+            <p class="delivery-form-desc desc">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+
+            <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+              <fieldset class="delivery-fieldset">
+                <div class="tooltip-wrapper">
+                  <label class="delivery-label" for="delivery-date">Дата</label>
+                  <button class="tooltip-toggle" type="button">
+                    <span class="visually-hidden">Дополнительная информация.</span>
+                  </button>
+                  <span class="tooltip-text" role="tooltip">Введите желаемую дату доставки.</span>
+                </div>
+                <input class="delivery-field input-field" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020" required>
+              </fieldset>
+
+              <fieldset class="delivery-fieldset">
+                <label class="delivery-label" for="delivery-phone">Телефон</label>
+                <input class="delivery-field input-field" type="tel" name="delivery-phone" id="delivery-phone" placeholder="+7 800 999-00-00" required>
+              </fieldset>
+
+              <fieldset class="delivery-fieldset">
+                <div class="tooltip-wrapper">
+                  <label class="delivery-label" for="delivery-address">Дата</label>
+                  <button class="tooltip-toggle" type="button">
+                    <span class="visually-hidden">Дополнительная информация.</span>
+                  </button>
+                  <span class="tooltip-text" role="tooltip">Введите название улицы, дома и квартиры</span>
+                </div>
+                <textarea class="delivery-field input-field" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8" required></textarea>
+              </fieldset>
+
+              <button class="delivery-button button button-secondary" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
       </main>
     </div>
   </body>
