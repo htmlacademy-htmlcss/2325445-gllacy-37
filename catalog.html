@@ -70,7 +70,7 @@
               <div class="user-menu-login-wrapper">
                 <h2 class="login-form-title title title-small">Личный кабинет</h2>
                 <form class="login-form" action="https://echo.htmlacademy.ru/" method="get">
-                  <fieldset class="login-form-fieldset">
+                  <fieldset class="login-form-group">
                     <label class="visually-hidden" for="login-email-field">Введите логин.</label>
                     <input class="login-field input-field" type="email" name="login-email-field" id="login-email-field" placeholder="Ваш e-mail" required>
                     <label class="visually-hidden" for="login-password-field">Введите пароль.</label>
@@ -156,6 +156,115 @@
 
           <h1 class="catalog-header-title title">Сливочное мороженое</h1>
         </header>
+
+        <section class="filters">
+          <h2 class="visually-hidden">Параметры фильтрации.</h2>
+
+          <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="filter-group filter-select">
+              <legend class="filter-title">Сортировка:</legend>
+              <select class="select-control" aria-label="Сортировка">
+                <option value="popular" selected>по популярности</option>
+                <option value="low-to-high">сначала дешевле</option>
+                <option value="high-to-low">сначала дороже</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="filter-group filter-group-range">
+              <div class="filter-range-input-wrapper">
+                <h3 class="filter-title">Цена:&nbsp;</h3>
+                <label class="filter-range-label">
+                  <input class="range-input" type="number" name="range-min" id="range-min" value="100">&nbsp;₽
+                </label>
+                <span>&nbsp;–&nbsp;</span>
+                <label class="filter-range-label">
+                  <input class="range-input" type="number" name="range-max" id="range-max" value="500">&nbsp;₽
+                </label>
+              </div>
+
+              <div class="filter-range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 32px; right: 60px">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="filter-group">
+              <legend class="filter-title">Жирность:</legend>
+              <ul class="filter-list list-reset">
+                <li class="filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="fat-content" value="0%">
+                    <span class="control-label">0%</span>
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="fat-content" value="до 10%" checked>
+                    <span class="control-label">до 10% </span>
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="fat-content" value="до 30%">
+                    <span class="control-label">до 30%</span>
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="fat-content" value="выше 30%">
+                    <span class="control-label">выше 30%</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="filter-group">
+              <legend class="filter-title">Наполнители:</legend>
+              <ul class="filter-list list-reset">
+                <li class="filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="topping-chocolate" checked>
+                    <span class="control-label">шоколадные</span>
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="topping-sprinkles" checked>
+                    <span class="control-label">сахарные посыпки</span>
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="topping-fruit">
+                    <span class="control-label">фрукты</span>
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="topping-syrup">
+                    <span class="control-label">сиропы</span>
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="topping-jam">
+                    <span class="control-label">джемы</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <button class="filter-button button" type="submit">Применить</button>
+          </form>
+        </section>
       </main>
 
       <footer class="footer">

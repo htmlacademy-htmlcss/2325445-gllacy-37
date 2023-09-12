@@ -70,7 +70,7 @@
               <div class="user-menu-login-wrapper">
                 <h2 class="login-form-title title title-small">Личный кабинет</h2>
                 <form class="login-form" action="https://echo.htmlacademy.ru/" method="get">
-                  <fieldset class="login-form-fieldset">
+                  <fieldset class="login-form-group">
                     <label class="visually-hidden" for="login-email-field">Введите логин.</label>
                     <input class="login-field input-field" type="email" name="login-email-field" id="login-email-field" placeholder="Ваш e-mail" required>
                     <label class="visually-hidden" for="login-password-field">Введите пароль.</label>
@@ -352,7 +352,7 @@
             <p class="delivery-form-desc desc">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
 
             <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-              <fieldset class="delivery-fieldset">
+              <fieldset class="delivery-group">
                 <div class="tooltip-wrapper">
                   <label class="delivery-label" for="delivery-date">Дата</label>
                   <button class="tooltip-toggle" type="button">
@@ -363,12 +363,12 @@
                 <input class="delivery-field input-field" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020" required>
               </fieldset>
 
-              <fieldset class="delivery-fieldset">
+              <fieldset class="delivery-group">
                 <label class="delivery-label" for="delivery-phone">Телефон</label>
                 <input class="delivery-field input-field" type="tel" name="delivery-phone" id="delivery-phone" placeholder="+7 800 999-00-00" required>
               </fieldset>
 
-              <fieldset class="delivery-fieldset">
+              <fieldset class="delivery-group">
                 <div class="tooltip-wrapper">
                   <label class="delivery-label" for="delivery-address">Дата</label>
                   <button class="tooltip-toggle" type="button">
@@ -392,7 +392,7 @@
             <h3 class="contacts-subtitle desc">Для заказов по телефону:</h3>
             <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             <p class="contacts-info">(с 10 до 20 ежедневно)</p>
-            <a class="contacts-button button button-secondary" href="#">Форма обратной связи</a>
+            <button class="contacts-button button button-secondary" type="button">Форма обратной связи</button>
           </div>
         </section>
       </main>
