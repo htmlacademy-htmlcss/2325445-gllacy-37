@@ -443,6 +443,25 @@
           <p class="madeby-desc">Сделано в <a class="madeby-link" href="https://htmlacademy.ru/">.html academy</a> &#169; 2021</p>
         </section>
       </footer>
+
+      <dialog class="modal-feedback">
+        <div class="feedback-wrapper">
+          <h2 class="feedback-title title">Мы обязательно ответим вам!</h2>
+
+          <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="feedback-name"></label>
+            <input class="feedback-field input-field" type="text" name="feedback-name" id="feedback-name" placeholder="Имя и фамилия" required>
+
+            <label class="visually-hidden" for="feedback-email"></label>
+            <input class="feedback-field input-field" type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com" required>
+
+            <label class="visually-hidden" for="feedback-topic"></label>
+            <textarea class="feedback-field input-field" name="feedback-topic" id="feedback-topic" placeholder="В свободной форме" required></textarea>
+
+            <button class="feedback-button button button-secondary">Отправить</button>
+          </form>
+        </div>
+      </dialog>
     </div>
   </body>
 </html>
