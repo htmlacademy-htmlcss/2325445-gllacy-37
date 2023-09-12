@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
   </head>
 
-  <body>
+  <body class="body-background-pink">
     <div class="container">
       <header class="header">
         <nav class="navigation">
@@ -17,7 +17,7 @@
             <li class="nav-item nav-item-catalog popup">
               <a class="nav-link nav-link-catalog" href="#">Каталог</a>
               <!-- Попап - каталог -->
-              <div class="nav-catalog-container">
+              <div class="nav-catalog-wrapper">
                 <ul class="nav-dropdown list-reset">
                   <li class="nav-dropdown-item">
                     <a class="nav-dropdown-link" href="#">Новинки</a>
@@ -53,7 +53,7 @@
                 <span class="visually-hidden">Открыть поиск по сайту.</span>
               </a>
               <!-- Попап - поиск  -->
-              <div class="user-menu-search-container">
+              <div class="user-menu-search-wrapper">
                 <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
                   <label class="visually-hidden" for="header-search-field">Форма поиска.</label>
                   <input class="search-field input-field" type="search" name="search-field" id="header-search-field" placeholder="Поиск по сайту">
@@ -67,7 +67,7 @@
                 <span>Вход</span>
               </a>
               <!-- Попап - вход  -->
-              <div class="user-menu-login-container">
+              <div class="user-menu-login-wrapper">
                 <h2 class="login-form-title title title-small">Личный кабинет</h2>
                 <form class="login-form" action="https://echo.htmlacademy.ru/" method="get">
                   <fieldset class="login-form-fieldset">
@@ -77,7 +77,7 @@
                     <input class="login-field input-field" type="password" name="login-password-field" id="login-password-field" required>
                   </fieldset>
 
-                  <button class="button login-form-button" type="submit">Войти</button>
+                  <button class="login-form-button button button-secondary" type="submit">Войти</button>
 
                   <div class="login-form-link-wrapper">
                     <a class="login-form-link" href="#">Забыли пароль?</a>
@@ -92,7 +92,7 @@
                 2 товара <span class="visually-hidden">в корзине.</span>
               </a>
               <!-- Попап - вход  -->
-              <div class="user-menu-cart-container">
+              <div class="user-menu-cart-wrapper">
                 <div class="cart-content cart-content-empty">
                   <h2 class="cart-title title title-small">Ваша корзина пока пуста</h2>
                 </div>
@@ -130,7 +130,7 @@
                   </ul>
 
                   <div class="cart-checkout">
-                    <a class="button cart-button" href="#">Оформить заказ</a>
+                    <a class="cart-button button button-secondary" href="#">Оформить заказ</a>
                     <span class="cart-total">Итого:&nbsp;790&nbsp;₽</span>
                   </div>
                 </div>
@@ -154,19 +154,19 @@
                 <li class="slider-content-item slider-content-item-active">
                   <h3 class="slider-title title">Нежный пломбир с клубничным джемом</h3>
                   <p class="slider-desc">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-                  <a class="button slider-button" href="#">Заказать</a>
+                  <a class="slider-button button" href="#">Заказать</a>
                 </li>
                 <!-- Слайд с текстом -->
                 <li class="slider-content-item slider-content-item-active">
                   <h3 class="slider-title title">Сливочное мороженое со вкусом банана</h3>
                   <p class="slider-desc">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
-                  <a class="button slider-button" href="#">Заказать</a>
+                  <a class="slider-button button" href="#">Заказать</a>
                 </li>
                 <!-- Слайд с текстом -->
                 <li class="slider-content-item slider-content-item-active">
                   <h3 class="slider-title title">Карамельный пломбир с маршмеллоу</h3>
                   <p class="slider-desc">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
-                  <a class="button slider-button" href="#">Заказать</a>
+                  <a class="slider-button button" href="#">Заказать</a>
                 </li>
               </ul>
 
@@ -216,19 +216,19 @@
             </div>
           </div>
 
-          <ul class="hero-socials list-reset">
-            <li class="hero-socials-item">
-              <a class="hero-socials-link" href="https://t.me/htmlacademy">
+          <ul class="hero-socials socials list-reset">
+            <li class="socials-item">
+              <a class="socials-link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграм.</span>
               </a>
             </li>
-            <li class="hero-socials-item">
-              <a class="hero-socials-link" href="https://vk.com/htmlacademy">
+            <li class="socials-item">
+              <a class="socials-link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте.</span>
               </a>
             </li>
-            <li class="hero-socials-item">
-              <a class="hero-socials-link" href="https://www.youtube.com/user/htmlacademyru">
+            <li class="socials-item">
+              <a class="socials-link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden" lang="en">YouTube.</span>
               </a>
             </li>
