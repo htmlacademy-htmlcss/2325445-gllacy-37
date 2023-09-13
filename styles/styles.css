@@ -4,11 +4,23 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%; /* sticky footer */
+  min-height: 100%; /* sticky footer */
+}
+
 img {
   max-width: 100%;
   height: auto;
 
   object-fit: cover;
+}
+
+.container {
+  display: flex; /* sticky footer */
+  flex-direction: column; /* sticky footer */
+
+  min-height: 100%; /* sticky footer */
 }
 
 .visually-hidden {
@@ -28,3 +40,6 @@ img {
   list-style: none;
 }
 
+.main {
+  flex-grow: 1; /* sticky footer */
+}
