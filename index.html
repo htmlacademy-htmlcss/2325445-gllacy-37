@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Gllacy Shop - Главная</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body class="page-background-pink">
@@ -10,7 +12,7 @@
       <header class="header">
         <nav class="navigation">
           <a class="logo nav-logo" href="index.html" aria-current="page">
-            <img src="#" width="137" height="56" alt="Логотип интернет-магазина. Надпись курсивом на английском языке: Глейси Шоп.">
+            <img src="images/logo.svg" width="137" height="56" alt="Логотип интернет-магазина. Надпись курсивом на английском языке: Глейси Шоп.">
           </a>
 
           <ul class="nav-list list-reset">
@@ -51,6 +53,7 @@
             <li class="user-menu-item user-menu-item-search">
               <a class="user-menu-link user-menu-link-search" href="#">
                 <span class="visually-hidden">Открыть поиск по сайту.</span>
+                <span class="user-menu-search-img"></span>
               </a>
               <!-- Попап - поиск  -->
               <div class="user-menu-search-wrapper">
@@ -64,6 +67,7 @@
 
             <li class="user-menu-item user-menu-item-login">
               <a class="user-menu-link user-menu-link-login" href="#">
+                <span class="user-menu-login-img"></span>
                 <span>Вход</span>
               </a>
               <!-- Попап - вход  -->
@@ -89,6 +93,7 @@
 
             <li class="user-menu-item user-menu-item-cart">
               <a class="user-menu-link user-menu-link-search" href="#">
+                <span class="user-menu-cart-img"></span>
                 2 товара <span class="visually-hidden">в корзине.</span>
               </a>
               <!-- Попап - вход  -->
@@ -104,7 +109,7 @@
                     <li class="cart-item">
                       <a class="cart-item-link" href="#">
                         <div class="cart-item-img">
-                          <img src="#" width="46" height="46" alt="Крупным планом: шарик малинового пломбира неоднородного розового цвета.">
+                          <img src="images/products/raspberry.png" width="46" height="46" alt="Крупным планом: шарик малинового пломбира неоднородного розового цвета.">
                         </div>
                         <p class="cart-item-title">Малинка</p>
                         <p class="cart-item-desc">1&nbsp;кг&nbsp;х&nbsp;310&nbsp;₽</p>
@@ -117,7 +122,7 @@
                     <li class="cart-item">
                       <a class="cart-item-link" href="#">
                         <div class="cart-item-img">
-                          <img src="#" width="46" height="46" alt="Крупным планом: шарик пломбира голубого цвета с разноцветной посыпкой.">
+                          <img src="images/products/bubble-gum.png" width="46" height="46" alt="Крупным планом: шарик пломбира голубого цвета с разноцветной посыпкой.">
                         </div>
                         <p class="cart-item-title">Бабл-гам</p>
                         <p class="cart-item-desc">1,5&nbsp;кг&nbsp;х&nbsp;320&nbsp;₽</p>
@@ -175,22 +180,24 @@
                 <!-- Картинки -->
                 <div class="slider-images">
                   <div class="slider-img slider-img-active">
-                    <img src="#" width="312" height="507" alt="Клубничное мороженое в вафельном рожке.">
+                    <img src="images/slider/strawberry-cone.png" width="312" height="507" alt="Клубничное мороженое в вафельном рожке.">
                   </div>
                   <div class="slider-img">
-                    <img src="#" width="66" height="150" alt="Банановое мороженое в вафельном рожке.">
+                    <img src="images/slider/banana-cone.png" width="66" height="150" alt="Банановое мороженое в вафельном рожке.">
                   </div>
                   <div class="slider-img">
-                    <img src="#" width="66" height="150" alt="Карамельное мороженое с маршмеллоу в вафельном рожке.">
+                    <img src="images/slider/caramel-cone.png" width="66" height="150" alt="Карамельное мороженое с маршмеллоу в вафельном рожке.">
                   </div>
                 </div>
                 <!-- Стрелки -->
                 <div class="slider-arrows">
                   <button class="slider-arrow slider-prev" type="button">
                     <span class="visually-hidden">Предыдущий товар.</span>
+                    <span class="slider-arrow-img"></span>
                   </button>
                   <button class="slider-arrow slider-next" type="button">
                     <span class="visually-hidden">Следующий товар.</span>
+                    <span class="slider-arrow-img"></span>
                   </button>
                 </div>
               </div>
@@ -258,7 +265,7 @@
           <ul class="product-card-list list-reset">
             <li class="product-card">
               <a class="product-card-img" href="#">
-                <img src="#" width="168" height="168" alt="Крупным планом: шарик малинового пломбира неоднородного розового цвета.">
+                <img src="images/products/raspberry.png" width="168" height="168" alt="Крупным планом: шарик малинового пломбира неоднородного розового цвета.">
               </a>
               <a class="product-card-link" href="#">
                 <h3 class="product-card-title">Малинка</h3>
@@ -266,13 +273,14 @@
               <p class="product-card-desc desc">Сливочное мороженое с малиновым джемом</p>
               <span class="product-card-price">310&nbsp;₽/кг</span>
               <button class="product-card-button" type="button">
+                <span class="product-card-button-cart"></span>
                 <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
 
             <li class="product-card">
               <a class="product-card-img" href="#">
-                <img src="#" width="168" height="168" alt="Крупным планом: шарик фисташкового пломбира с шоколадными каплями.">
+                <img src="images/products/pistachio.png" width="168" height="168" alt="Крупным планом: шарик фисташкового пломбира с шоколадными каплями.">
               </a>
               <a class="product-card-link" href="#">
                 <h3 class="product-card-title">Фисташка</h3>
@@ -280,13 +288,14 @@
               <p class="product-card-desc desc">Фисташковый пломбир с кусочками шоколада</p>
               <span class="product-card-price">340&nbsp;₽/кг</span>
               <button class="product-card-button" type="button">
+                <span class="product-card-button-cart"></span>
                 <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
 
             <li class="product-card">
               <a class="product-card-img" href="#">
-                <img src="#" width="168" height="168" alt="Крупным планом: шарик пломбира кремового цвета с вкраплениями черники.">
+                <img src="images/products/blueberry.png" width="168" height="168" alt="Крупным планом: шарик пломбира кремового цвета с вкраплениями черники.">
               </a>
               <a class="product-card-link" href="#">
                 <h3 class="product-card-title">Черника</h3>
@@ -294,13 +303,14 @@
               <p class="product-card-desc desc">Крем-брюле с черничным джемом</p>
               <span class="product-card-price">330&nbsp;₽/кг</span>
               <button class="product-card-button" type="button">
+                <span class="product-card-button-cart"></span>
                 <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
 
             <li class="product-card">
               <a class="product-card-img" href="#">
-                <img src="#" width="168" height="168" alt="Крупным планом: шарик пломбира голубого цвета с разноцветной посыпкой.">
+                <img src="images/products/bubble-gum.png" width="168" height="168" alt="Крупным планом: шарик пломбира голубого цвета с разноцветной посыпкой.">
               </a>
               <a class="product-card-link" href="#">
                 <h3 class="product-card-title">Бабл-гам</h3>
@@ -308,6 +318,7 @@
               <p class="product-card-desc desc">Ванильный пломбир со сладкой посыпкой</p>
               <span class="product-card-price">320&nbsp;₽/кг</span>
               <button class="product-card-button" type="button">
+                <span class="product-card-button-cart"></span>
                 <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
@@ -439,7 +450,9 @@
 
         <section>
           <h2 class="visually-hidden">Авторы сайта.</h2>
-          <a class="madeby-logo" href="https://htmlacademy.ru/" target="_blank" aria-label="Логотип HTMLAcademy."></a>
+          <a class="madeby-logo" href="https://htmlacademy.ru/" target="_blank" aria-label="Логотип HTMLAcademy.">
+            <img src="images/madeby-logo.svg" width="93" height="27" alt="">
+          </a>
           <p class="madeby-desc">Сделано в <a class="madeby-link" href="https://htmlacademy.ru/">.html academy</a> &#169; 2021</p>
         </section>
       </footer>
