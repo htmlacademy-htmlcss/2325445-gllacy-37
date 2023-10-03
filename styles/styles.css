@@ -723,3 +723,56 @@ img {
   background-color: #fcfcfc;
 }
 
+.hero-socials {
+  justify-content: end;
+  margin-top: 2px;
+}
+
+.socials {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 16px;
+}
+
+.socials-item {
+  display: block;
+}
+
+.socials-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
+}
+
+.socials-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 24px 24px;
+  mask-size: 24px 24px;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  background-color: #fcfcfc;
+}
+
+.socials-icon-telegram {
+  -webkit-mask-image: url("../images/icons/icons-socials/telegram.svg");
+  mask-image: url("../images/icons/icons-socials/telegram.svg");
+}
+
+.socials-icon-vk {
+  -webkit-mask-image: url("../images/icons/icons-socials/vk.svg");
+  mask-image: url("../images/icons/icons-socials/vk.svg");
+}
+
+.socials-icon-youtube {
+  -webkit-mask-image: url("../images/icons/icons-socials/youtube.svg");
+  mask-image: url("../images/icons/icons-socials/youtube.svg");
+}
+
