@@ -135,6 +135,24 @@ img {
   color: #b9b9b9;
 }
 
+.title {
+  margin: 0;
+
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  color: #2d3440;
+}
+
+.title-small {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #2d3440;
+}
+
 .main {
   flex-grow: 1; /* sticky footer */
 }
