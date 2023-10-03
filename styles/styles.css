@@ -924,3 +924,65 @@ img {
   background-color: #fcfcfc;
 }
 
+.about {
+  padding: 24px;
+
+  background-image: url("../images/backgrounds/waffle-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.about-wrapper {
+  padding: 56px 40px;
+
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.about-title {
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+.about-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 32px;
+}
+
+.about-item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  column-gap: 16px;
+}
+
+.about-item::before {
+  content: "";
+
+  width: 48px;
+  height: 48px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32px 32px;
+  border: 2px solid #2d3440;
+  border-radius: 50%;
+}
+
+.about-item-production::before {
+  background-image: url("../images/icons/icons-about/icecream.svg");
+}
+
+.about-item-partners::before {
+  background-image: url("../images/icons/icons-about/cow.svg");
+}
+
+.about-item-ingredients::before {
+  background-image: url("../images/icons/icons-about/leaf.svg");
+}
+
+.about-item-temperature::before {
+  background-image: url("../images/icons/icons-about/temperature.svg");
+}
+
