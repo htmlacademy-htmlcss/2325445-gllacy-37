@@ -371,6 +371,50 @@ img {
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
 }
 
+.login-popup {
+  right: -1px;
+
+  padding: 48px;
+  padding-bottom: 52px;
+  width: 420px;
+
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+}
+
+.login-form-title {
+  margin-bottom: 32px;
+}
+
+.login-form {
+  display: grid;
+  grid-template-columns: 113px 1fr;
+  column-gap: 23px;
+}
+
+.login-form-group {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  border: none;
+}
+
+.login-form-link {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: inherit;
+  text-underline-offset: 4px;
+}
+
+.login-form-link:not(:last-child) {
+  margin-bottom: 4px;
+}
+
 .main {
   flex-grow: 1; /* sticky footer */
 }
