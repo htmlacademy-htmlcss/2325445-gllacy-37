@@ -1249,3 +1249,59 @@ img {
   color: #565c66;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 48px 0;
+}
+
+.footer-nav {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 8px 0;
+}
+
+.footer-nav-link {
+  display: block;
+  padding-left: 24px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.footer-nav-link-special {
+  font-weight: 700;
+
+  background-image: url("../images/icons/heart.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center left 0;
+}
+
+.madeby-logo {
+  display: block;
+  margin-bottom: 14px;
+  width: 93px;
+}
+
+.madeby-logo img {
+  display: block;
+}
+
+.madeby-desc {
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 16px;
+  color: #2d3440;
+}
+
+.madeby-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(45, 52, 64, 0.5);
+}
+
