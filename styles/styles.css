@@ -986,3 +986,31 @@ img {
   background-image: url("../images/icons/icons-about/temperature.svg");
 }
 
+.blog-subscribe-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.blog {
+  padding: 33px 32px;
+  padding-right: 210px;
+  min-height: 224px;
+
+  background-image: url("../images/backgrounds/blog-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.blog-subtitle {
+  margin: 0;
+  margin-bottom: 12px;
+  line-height: 20px;
+}
+
+.blog-link {
+  color: #2d3440;
+  text-decoration: none;
+}
+
