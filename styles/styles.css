@@ -49,6 +49,18 @@ img {
   object-fit: cover;
 }
 
+.page-background-pink {
+  background-color: #feafc3;
+}
+
+.page-background-blue {
+  background-color: #69a9ff;
+}
+
+.page-background-yellow {
+  background-color: #fcc850;
+}
+
 .container {
   display: flex; /* sticky footer */
   flex-direction: column; /* sticky footer */
