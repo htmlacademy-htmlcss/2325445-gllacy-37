@@ -1566,3 +1566,72 @@ img {
   box-shadow: 0 0 0 2px #fcfcfc;
 }
 
+.catalog {
+  padding: 39px 0;
+  border-bottom: 1px solid rgba(252, 252, 252, 0.3);
+}
+
+.catalog .product-card-list {
+  padding-bottom: 16px;
+}
+
+.catalog-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: auto;
+  padding: 41px 0;
+  width: 682px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination-button {
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../images/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
+}
+
+.pagination-button-prev {
+  transform: rotate(90deg);
+}
+
+.pagination-button-next {
+  transform: rotate(-90deg);
+}
+
+.pagination-button-disabled {
+  opacity: 0.3;
+}
+
+.pagination-list {
+  display: flex;
+}
+
+.pagination-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 24px;
+  height: 24px;
+
+  text-decoration: none;
+  color: #2d3440;
+
+  border-radius: 12px;
+}
+
+.pagination-link-current {
+  background-color: #fcfcfc;
+}
+
