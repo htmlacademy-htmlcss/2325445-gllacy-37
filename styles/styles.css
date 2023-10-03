@@ -1635,3 +1635,65 @@ img {
   background-color: #fcfcfc;
 }
 
+.modal-feedback {
+  padding: 0;
+  width: 570px;
+
+  background-color: #fcfcfc;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+}
+
+.modal-feedback::backdrop {
+  background-color: rgba(45, 52, 64, 0.3);
+}
+
+.feedback-wrapper {
+  position: relative;
+
+  padding: 64px;
+  padding-bottom: 66px;
+}
+
+.feedback-title {
+  margin-bottom: 32px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feedback-field-topic {
+  height: 149px;
+  resize: none;
+}
+
+.feedback-button {
+  align-self: flex-end;
+
+  margin-top: 16px;
+  margin-right: -2px;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+
+  padding: 0;
+  width: 20px;
+  height: 20px;
+
+  background-color: transparent;
+  background-image: url("../images/icons/close.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+
+  border: none;
+
+  cursor: pointer;
+}
