@@ -776,3 +776,45 @@ img {
   mask-image: url("../images/icons/icons-socials/youtube.svg");
 }
 
+.specials-title {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.special-offer-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.special-offer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 28px;
+
+  padding: 36px;
+  padding-right: 219px;
+
+  color: #2d3440;
+
+  background-color: #ff7799;
+  background-repeat: no-repeat;
+  background-position: right 0 center;
+  background-size: 219px auto;
+  border-radius: 16px;
+}
+
+.special-offer-raspberry {
+  background-image: url("../images/raspberry-special.png");
+}
+
+.special-offer-marshmallow {
+  background-image: url("../images/marshmallow-special.png");
+}
+
+.special-offer-desc {
+  margin: 0;
+  max-width: 304px;
+}
+
