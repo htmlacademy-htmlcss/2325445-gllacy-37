@@ -1305,3 +1305,49 @@ img {
   border-bottom: 1px solid rgba(45, 52, 64, 0.5);
 }
 
+/* catalog */
+.catalog-header {
+  padding: 32px 0;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  position: relative;
+  padding-right: 20px;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  right: -1px;
+  transform: translateY(-50%);
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../images/icons/breadcrumbs.svg");
+}
+
+.breadcrumbs-link {
+  display: block;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.breadcrumbs-link-current {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
