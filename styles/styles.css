@@ -87,6 +87,33 @@ img {
   list-style: none;
 }
 
+.button {
+  display: inline-block;
+
+  padding: 12px 32px;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #2d3440;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: #fcfcfc;
+  border: none;
+  border-radius: 22px;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1),
+              0 0 0 4px rgba(252, 252, 252, 0.4);
+  cursor: pointer;
+}
+
+.button-secondary {
+  color: #fcfcfc;
+  background-color: #ff2f64;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1),
+              0 0 0 4px rgba(255, 47, 100, 0.3);
+}
 .main {
   flex-grow: 1; /* sticky footer */
 }
