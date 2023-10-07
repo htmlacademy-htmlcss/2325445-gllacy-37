@@ -13,6 +13,8 @@
     <div class="container">
       <header class="header">
         <nav class="nav">
+          <h1 class="visually-hidden">Интернет-магазин мороженого "Глейси Шоп".</h1>
+
           <a class="logo nav-logo" href="index.html" aria-current="page">
             <img src="images/logo.svg" width="137" height="56" alt="Логотип интернет-магазина. Надпись курсивом на английском языке: Глейси Шоп.">
           </a>
@@ -75,12 +77,12 @@
               <!-- Попап - вход  -->
               <div class="login-popup popup">
                 <h2 class="login-form-title title-small">Личный кабинет</h2>
-                <form class="login-form" action="https://echo.htmlacademy.ru/" method="get">
+                <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
                   <fieldset class="login-form-group">
                     <label class="visually-hidden" for="login-email-field">Введите логин.</label>
-                    <input class="login-field input-field" type="email" name="login-email-field" id="login-email-field" placeholder="Ваш e-mail" required>
+                    <input class="login-field input-field" type="email" name="login-email-field" id="login-email-field" placeholder="Ваш e-mail" value="email@example.com" required>
                     <label class="visually-hidden" for="login-password-field">Введите пароль.</label>
-                    <input class="login-field input-field" type="password" name="login-password-field" id="login-password-field" required>
+                    <input class="login-field input-field" type="password" name="login-password-field" id="login-password-field" value="пароль" required>
                   </fieldset>
 
                   <button class="login-form-button button button-secondary" type="submit">Войти</button>
@@ -151,7 +153,6 @@
 
       <main class="main main-index">
         <section class="hero">
-          <h1 class="visually-hidden">Интернет-магазин мороженого "Глейси Шоп".</h1>
           <!-- Слайдер -->
           <div class="slider">
             <h2 class="visually-hidden">Промо-слайдер.</h2>
@@ -180,7 +181,7 @@
             <div class="slider-control">
               <!-- Картинки -->
               <div class="slider-images">
-                <div class="slider-img slider-img-active">
+                <div class="slider-img slider-img-active slider-img-special">
                   <img src="images/slider/strawberry-cone.png" width="312" height="507" alt="Клубничное мороженое в вафельном рожке.">
                 </div>
                 <div class="slider-img">
@@ -459,7 +460,7 @@
           </ul>
         </section>
 
-        <section>
+        <section class="footer-madeby">
           <h2 class="visually-hidden">Авторы сайта.</h2>
           <a class="madeby-logo" href="https://htmlacademy.ru/" target="_blank" aria-label="Логотип HTMLAcademy.">
             <img src="images/madeby-logo.svg" width="93" height="27" alt="">
@@ -482,7 +483,7 @@
             <label class="visually-hidden" for="feedback-topic"></label>
             <textarea class="feedback-field-topic input-field" name="feedback-topic" id="feedback-topic" placeholder="В свободной форме" required></textarea>
 
-            <button class="feedback-button button button-secondary">Отправить</button>
+            <button class="feedback-button button button-secondary" type="submit">Отправить</button>
           </form>
 
           <button class="modal-close-button" type="button">
