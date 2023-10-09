@@ -1284,10 +1284,11 @@ img {
 }
 
 .product-card-row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   justify-content: space-between;
   align-items: center;
+  column-gap: 16px;
 }
 
 .product-card-price {
@@ -1297,7 +1298,7 @@ img {
 }
 
 .product-card-button {
-  flex-shrink: 0;
+  align-self: start;
 
   padding: 0;
   width: 32px;
@@ -1434,6 +1435,7 @@ img {
 .blog-subscribe-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: start;
   gap: 30px;
 }
 
